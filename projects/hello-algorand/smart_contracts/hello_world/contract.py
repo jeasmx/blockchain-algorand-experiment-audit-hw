@@ -7,7 +7,7 @@ class HelloWorld(ARC4Contract):
     Smart contract para auditoría de resultados experimentales.
 
     Mantiene el nombre HelloWorld para no romper la estructura
-    generada por AlgoKit, pero la lógica ya corresponde al proyecto..
+    generada por AlgoKit, pero la lógica ya corresponde al proyecto...
     """
 
     def __init__(self) -> None:
