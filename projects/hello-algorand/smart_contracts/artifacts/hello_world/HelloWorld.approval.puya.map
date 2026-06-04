@@ -1,0 +1,2684 @@
+{
+  "version": 3,
+  "sources": [
+    "../../hello_world/contract.py"
+  ],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAaQ;AAA0B;AAA1B;AAEA;AAA0B;;AAA1B;AACA;AAAyB;;AAAzB;AACA;AAAuB;;;AAAvB;AACA;;AAAuB;;;AAAvB;AAEA;;AAAmB;;AAAnB;AACA;;AAAkB;AAAlB;AAjBR;;AAAA;;;AAAA;;AAAA;AAAA;AAAA;;AAAA;AAAA;;;;;;;;;;;;;;;;;;;;;;AAAA;;;AAAA;;;;;;;;;;AAAA;;;;;;;;;AAmBK;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;;;AAEU;;;;;;;;;AAAA;AAAA;AAFV;AAAA;AAAA;AAAA;;;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;AAAA;AAIA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;;;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;;;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;;;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;;;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;;;AAiBG;AAAA;AAAA;AAAA;AAA2B;AAA3B;AAAA;AAAA;AAAA;AACA;AAAA;;AAAA;AACA;AAAA;;AAAA;AACA;AAAA;;AAAA;AACA;;AAAA;;AAAA;AACA;;AAAmB;;AAAnB;AACA;;AAAkB;;AAAlB;AAQI;;;;;;;;;;;;;;;;AAAA;;AAAA;AAEE;;;;;;;;AAFF;AAAA;;AAAA;AAIE;;;;;;;;;;;;;;AAJF;AAAA;;AAAA;AAME;;;;;;;;;;;;;;AANF;AAAA;;AAAA;AAQE;;;;;;;;;;;;;AARF;AAAA;AAAA;AAYJ;;AAAA;;AAAA;AA3CH;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAuDS;AAAA;AAAA;AAAA;AADF;;;;;;;;;;;;;;;;;AAAA;AAAA;AAEE;;;;;;;;;;;AAFF;AAGE;AAAA;AAAA;AAAA;AAHF;AAIE;;;;;;;;;;;;;;;;;AAJF;AAKE;AAAA;AAAA;AAAA;AALF;AAME;;;;;;;;;;;;;;;;;AANF;AAOE;AAAA;;AAAA;AAAA;AAPF;AAPP;AAAA;AAAA;AAAA;;;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;AAAA;AAiBA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;;;AAY4B;AAAA;AAZ5B;AAAA;AAAA;AAAA;;;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;AAAA",
+  "op_pc_offset": 0,
+  "pc_events": {
+    "1": {
+      "subroutine": "algopy.arc4.ARC4Contract.approval_program",
+      "params": {},
+      "block": "main",
+      "stack_in": [],
+      "op": "intcblock 0 2 1"
+    },
+    "6": {
+      "op": "bytecblock \"experiment_counter\" \"last_experiment_id\" \"last_results_hash\" \"last_throughput\" \"last_collisions\" 0x151f7c75 \"NONE\" \"last_author\" \"last_round\""
+    },
+    "129": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "131": {
+      "op": "bnz main_after_if_else@2",
+      "stack_out": []
+    },
+    "134": {
+      "op": "bytec_0 // \"experiment_counter\"",
+      "defined_out": [
+        "\"experiment_counter\""
+      ],
+      "stack_out": [
+        "\"experiment_counter\""
+      ]
+    },
+    "135": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "\"experiment_counter\"",
+        "0"
+      ],
+      "stack_out": [
+        "\"experiment_counter\"",
+        "0"
+      ]
+    },
+    "136": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "137": {
+      "op": "bytec_1 // \"last_experiment_id\"",
+      "defined_out": [
+        "\"last_experiment_id\""
+      ],
+      "stack_out": [
+        "\"last_experiment_id\""
+      ]
+    },
+    "138": {
+      "op": "bytec 6 // \"NONE\"",
+      "defined_out": [
+        "\"NONE\"",
+        "\"last_experiment_id\""
+      ],
+      "stack_out": [
+        "\"last_experiment_id\"",
+        "\"NONE\""
+      ]
+    },
+    "140": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "141": {
+      "op": "bytec_2 // \"last_results_hash\"",
+      "defined_out": [
+        "\"last_results_hash\""
+      ],
+      "stack_out": [
+        "\"last_results_hash\""
+      ]
+    },
+    "142": {
+      "op": "bytec 6 // \"NONE\"",
+      "stack_out": [
+        "\"last_results_hash\"",
+        "\"NONE\""
+      ]
+    },
+    "144": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "145": {
+      "op": "bytec_3 // \"last_throughput\"",
+      "defined_out": [
+        "\"last_throughput\""
+      ],
+      "stack_out": [
+        "\"last_throughput\""
+      ]
+    },
+    "146": {
+      "op": "pushbytes \"0\"",
+      "defined_out": [
+        "\"0\"",
+        "\"last_throughput\""
+      ],
+      "stack_out": [
+        "\"last_throughput\"",
+        "\"0\""
+      ]
+    },
+    "149": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "150": {
+      "op": "bytec 4 // \"last_collisions\"",
+      "defined_out": [
+        "\"last_collisions\""
+      ],
+      "stack_out": [
+        "\"last_collisions\""
+      ]
+    },
+    "152": {
+      "op": "pushbytes \"0\"",
+      "stack_out": [
+        "\"last_collisions\"",
+        "\"0\""
+      ]
+    },
+    "155": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "156": {
+      "op": "bytec 7 // \"last_author\"",
+      "defined_out": [
+        "\"last_author\""
+      ],
+      "stack_out": [
+        "\"last_author\""
+      ]
+    },
+    "158": {
+      "op": "pushbytes 0x",
+      "defined_out": [
+        "\"last_author\"",
+        "0x"
+      ],
+      "stack_out": [
+        "\"last_author\"",
+        "0x"
+      ]
+    },
+    "160": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "161": {
+      "op": "bytec 8 // \"last_round\"",
+      "defined_out": [
+        "\"last_round\""
+      ],
+      "stack_out": [
+        "\"last_round\""
+      ]
+    },
+    "163": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "\"last_round\"",
+        "0"
+      ]
+    },
+    "164": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "165": {
+      "block": "main_after_if_else@2",
+      "stack_in": [],
+      "op": "txn NumAppArgs",
+      "defined_out": [
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "tmp%0#1"
+      ]
+    },
+    "167": {
+      "op": "bz main___algopy_default_create@13",
+      "stack_out": []
+    },
+    "170": {
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0"
+      ]
+    },
+    "172": {
+      "op": "!",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "173": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "174": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%4#0"
+      ]
+    },
+    "176": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "177": {
+      "op": "pushbytess 0x02bece11 0x7e631a5c 0x229a4513 0xec7620e0 // method \"hello(string)string\", method \"register_experiment(string,string,string,string,string)string\", method \"get_experiment_summary()string\", method \"get_experiment_box(string)string\"",
+      "defined_out": [
+        "Method(get_experiment_box(string)string)",
+        "Method(get_experiment_summary()string)",
+        "Method(hello(string)string)",
+        "Method(register_experiment(string,string,string,string,string)string)"
+      ],
+      "stack_out": [
+        "Method(hello(string)string)",
+        "Method(register_experiment(string,string,string,string,string)string)",
+        "Method(get_experiment_summary()string)",
+        "Method(get_experiment_box(string)string)"
+      ]
+    },
+    "199": {
+      "op": "txna ApplicationArgs 0",
+      "defined_out": [
+        "Method(get_experiment_box(string)string)",
+        "Method(get_experiment_summary()string)",
+        "Method(hello(string)string)",
+        "Method(register_experiment(string,string,string,string,string)string)",
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "Method(hello(string)string)",
+        "Method(register_experiment(string,string,string,string,string)string)",
+        "Method(get_experiment_summary()string)",
+        "Method(get_experiment_box(string)string)",
+        "tmp%6#0"
+      ]
+    },
+    "202": {
+      "op": "match hello register_experiment get_experiment_summary get_experiment_box",
+      "stack_out": []
+    },
+    "212": {
+      "op": "err"
+    },
+    "213": {
+      "block": "main___algopy_default_create@13",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%7#0"
+      ],
+      "stack_out": [
+        "tmp%7#0"
+      ]
+    },
+    "215": {
+      "op": "!",
+      "defined_out": [
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0"
+      ]
+    },
+    "216": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%8#0",
+        "tmp%9#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%9#0"
+      ]
+    },
+    "218": {
+      "op": "!",
+      "defined_out": [
+        "tmp%10#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%10#0"
+      ]
+    },
+    "219": {
+      "op": "&&",
+      "defined_out": [
+        "tmp%11#0"
+      ],
+      "stack_out": [
+        "tmp%11#0"
+      ]
+    },
+    "220": {
+      "op": "return",
+      "defined_out": [],
+      "stack_out": []
+    },
+    "221": {
+      "subroutine": "smart_contracts.hello_world.contract.HelloWorld.hello[routing]",
+      "params": {},
+      "block": "hello",
+      "stack_in": [],
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "224": {
+      "op": "dup",
+      "defined_out": [
+        "tmp%0#0",
+        "tmp%0#0 (copy)"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "tmp%0#0 (copy)"
+      ]
+    },
+    "225": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0",
+        "tmp%0#0",
+        "tmp%0#0 (copy)"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "tmp%0#0 (copy)",
+        "0"
+      ]
+    },
+    "226": {
+      "error": "invalid array length header",
+      "op": "extract_uint16 // on error: invalid array length header",
+      "defined_out": [
+        "aggregate%array_length%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "aggregate%array_length%0#0"
+      ]
+    },
+    "227": {
+      "op": "intc_1 // 2",
+      "defined_out": [
+        "2",
+        "aggregate%array_length%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "aggregate%array_length%0#0",
+        "2"
+      ]
+    },
+    "228": {
+      "op": "+",
+      "defined_out": [
+        "add%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "add%0#0"
+      ]
+    },
+    "229": {
+      "op": "dig 1",
+      "stack_out": [
+        "tmp%0#0",
+        "add%0#0",
+        "tmp%0#0 (copy)"
+      ]
+    },
+    "231": {
+      "op": "len",
+      "defined_out": [
+        "add%0#0",
+        "len%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "add%0#0",
+        "len%0#0"
+      ]
+    },
+    "232": {
+      "op": "==",
+      "defined_out": [
+        "eq%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "eq%0#0"
+      ]
+    },
+    "233": {
+      "error": "invalid number of bytes for arc4.dynamic_array<arc4.uint8>",
+      "op": "assert // invalid number of bytes for arc4.dynamic_array<arc4.uint8>",
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "234": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "name#0"
+      ],
+      "stack_out": [
+        "name#0"
+      ]
+    },
+    "237": {
+      "op": "pushbytes \"Hello, \"",
+      "defined_out": [
+        "\"Hello, \"",
+        "name#0"
+      ],
+      "stack_out": [
+        "name#0",
+        "\"Hello, \""
+      ]
+    },
+    "246": {
+      "op": "swap",
+      "stack_out": [
+        "\"Hello, \"",
+        "name#0"
+      ]
+    },
+    "247": {
+      "op": "concat",
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "248": {
+      "op": "dup",
+      "stack_out": [
+        "tmp%0#0",
+        "tmp%0#0 (copy)"
+      ]
+    },
+    "249": {
+      "op": "len",
+      "defined_out": [
+        "aggregate%length%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "aggregate%length%0#0"
+      ]
+    },
+    "250": {
+      "op": "itob",
+      "defined_out": [
+        "aggregate%as_bytes%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "aggregate%as_bytes%0#0"
+      ]
+    },
+    "251": {
+      "op": "extract 6 2",
+      "defined_out": [
+        "aggregate%length_uint16%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "aggregate%length_uint16%0#0"
+      ]
+    },
+    "254": {
+      "op": "swap",
+      "stack_out": [
+        "aggregate%length_uint16%0#0",
+        "tmp%0#0"
+      ]
+    },
+    "255": {
+      "op": "concat",
+      "defined_out": [
+        "aggregate%encoded_value%0#0"
+      ],
+      "stack_out": [
+        "aggregate%encoded_value%0#0"
+      ]
+    },
+    "256": {
+      "op": "bytec 5 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "aggregate%encoded_value%0#0"
+      ],
+      "stack_out": [
+        "aggregate%encoded_value%0#0",
+        "0x151f7c75"
+      ]
+    },
+    "258": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "aggregate%encoded_value%0#0"
+      ]
+    },
+    "259": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%4#0"
+      ]
+    },
+    "260": {
+      "op": "log",
+      "stack_out": []
+    },
+    "261": {
+      "op": "intc_2 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "1"
+      ]
+    },
+    "262": {
+      "op": "return",
+      "stack_out": []
+    },
+    "263": {
+      "subroutine": "smart_contracts.hello_world.contract.HelloWorld.register_experiment[routing]",
+      "params": {},
+      "block": "register_experiment",
+      "stack_in": [],
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "266": {
+      "op": "dup",
+      "defined_out": [
+        "tmp%0#0",
+        "tmp%0#0 (copy)"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "tmp%0#0 (copy)"
+      ]
+    },
+    "267": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0",
+        "tmp%0#0",
+        "tmp%0#0 (copy)"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "tmp%0#0 (copy)",
+        "0"
+      ]
+    },
+    "268": {
+      "error": "invalid array length header",
+      "op": "extract_uint16 // on error: invalid array length header",
+      "defined_out": [
+        "aggregate%array_length%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "aggregate%array_length%0#0"
+      ]
+    },
+    "269": {
+      "op": "intc_1 // 2",
+      "defined_out": [
+        "2",
+        "aggregate%array_length%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "aggregate%array_length%0#0",
+        "2"
+      ]
+    },
+    "270": {
+      "op": "+",
+      "defined_out": [
+        "add%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "add%0#0"
+      ]
+    },
+    "271": {
+      "op": "dig 1",
+      "stack_out": [
+        "tmp%0#0",
+        "add%0#0",
+        "tmp%0#0 (copy)"
+      ]
+    },
+    "273": {
+      "op": "len",
+      "defined_out": [
+        "add%0#0",
+        "len%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "add%0#0",
+        "len%0#0"
+      ]
+    },
+    "274": {
+      "op": "==",
+      "defined_out": [
+        "eq%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "eq%0#0"
+      ]
+    },
+    "275": {
+      "error": "invalid number of bytes for arc4.dynamic_array<arc4.uint8>",
+      "op": "assert // invalid number of bytes for arc4.dynamic_array<arc4.uint8>",
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "276": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "experiment_id#0"
+      ],
+      "stack_out": [
+        "experiment_id#0"
+      ]
+    },
+    "279": {
+      "op": "txna ApplicationArgs 2",
+      "defined_out": [
+        "experiment_id#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "experiment_id#0",
+        "tmp%2#0"
+      ]
+    },
+    "282": {
+      "op": "dup",
+      "defined_out": [
+        "experiment_id#0",
+        "tmp%2#0",
+        "tmp%2#0 (copy)"
+      ],
+      "stack_out": [
+        "experiment_id#0",
+        "tmp%2#0",
+        "tmp%2#0 (copy)"
+      ]
+    },
+    "283": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "experiment_id#0",
+        "tmp%2#0",
+        "tmp%2#0 (copy)",
+        "0"
+      ]
+    },
+    "284": {
+      "error": "invalid array length header",
+      "op": "extract_uint16 // on error: invalid array length header",
+      "defined_out": [
+        "aggregate%array_length%1#0",
+        "experiment_id#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "experiment_id#0",
+        "tmp%2#0",
+        "aggregate%array_length%1#0"
+      ]
+    },
+    "285": {
+      "op": "intc_1 // 2",
+      "stack_out": [
+        "experiment_id#0",
+        "tmp%2#0",
+        "aggregate%array_length%1#0",
+        "2"
+      ]
+    },
+    "286": {
+      "op": "+",
+      "defined_out": [
+        "add%1#0",
+        "experiment_id#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "experiment_id#0",
+        "tmp%2#0",
+        "add%1#0"
+      ]
+    },
+    "287": {
+      "op": "dig 1",
+      "stack_out": [
+        "experiment_id#0",
+        "tmp%2#0",
+        "add%1#0",
+        "tmp%2#0 (copy)"
+      ]
+    },
+    "289": {
+      "op": "len",
+      "defined_out": [
+        "add%1#0",
+        "experiment_id#0",
+        "len%1#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "experiment_id#0",
+        "tmp%2#0",
+        "add%1#0",
+        "len%1#0"
+      ]
+    },
+    "290": {
+      "op": "==",
+      "defined_out": [
+        "eq%1#0",
+        "experiment_id#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "experiment_id#0",
+        "tmp%2#0",
+        "eq%1#0"
+      ]
+    },
+    "291": {
+      "error": "invalid number of bytes for arc4.dynamic_array<arc4.uint8>",
+      "op": "assert // invalid number of bytes for arc4.dynamic_array<arc4.uint8>",
+      "stack_out": [
+        "experiment_id#0",
+        "tmp%2#0"
+      ]
+    },
+    "292": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "experiment_id#0",
+        "results_hash#0"
+      ],
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0"
+      ]
+    },
+    "295": {
+      "op": "txna ApplicationArgs 3",
+      "defined_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "tmp%4#0"
+      ]
+    },
+    "298": {
+      "op": "dup",
+      "defined_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "tmp%4#0",
+        "tmp%4#0 (copy)"
+      ],
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "tmp%4#0",
+        "tmp%4#0 (copy)"
+      ]
+    },
+    "299": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "tmp%4#0",
+        "tmp%4#0 (copy)",
+        "0"
+      ]
+    },
+    "300": {
+      "error": "invalid array length header",
+      "op": "extract_uint16 // on error: invalid array length header",
+      "defined_out": [
+        "aggregate%array_length%2#0",
+        "experiment_id#0",
+        "results_hash#0",
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "tmp%4#0",
+        "aggregate%array_length%2#0"
+      ]
+    },
+    "301": {
+      "op": "intc_1 // 2",
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "tmp%4#0",
+        "aggregate%array_length%2#0",
+        "2"
+      ]
+    },
+    "302": {
+      "op": "+",
+      "defined_out": [
+        "add%2#0",
+        "experiment_id#0",
+        "results_hash#0",
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "tmp%4#0",
+        "add%2#0"
+      ]
+    },
+    "303": {
+      "op": "dig 1",
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "tmp%4#0",
+        "add%2#0",
+        "tmp%4#0 (copy)"
+      ]
+    },
+    "305": {
+      "op": "len",
+      "defined_out": [
+        "add%2#0",
+        "experiment_id#0",
+        "len%2#0",
+        "results_hash#0",
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "tmp%4#0",
+        "add%2#0",
+        "len%2#0"
+      ]
+    },
+    "306": {
+      "op": "==",
+      "defined_out": [
+        "eq%2#0",
+        "experiment_id#0",
+        "results_hash#0",
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "tmp%4#0",
+        "eq%2#0"
+      ]
+    },
+    "307": {
+      "error": "invalid number of bytes for arc4.dynamic_array<arc4.uint8>",
+      "op": "assert // invalid number of bytes for arc4.dynamic_array<arc4.uint8>",
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "tmp%4#0"
+      ]
+    },
+    "308": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0"
+      ],
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0"
+      ]
+    },
+    "311": {
+      "op": "txna ApplicationArgs 4",
+      "defined_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "tmp%6#0"
+      ]
+    },
+    "314": {
+      "op": "dup",
+      "defined_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "tmp%6#0",
+        "tmp%6#0 (copy)"
+      ],
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "tmp%6#0",
+        "tmp%6#0 (copy)"
+      ]
+    },
+    "315": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "tmp%6#0",
+        "tmp%6#0 (copy)",
+        "0"
+      ]
+    },
+    "316": {
+      "error": "invalid array length header",
+      "op": "extract_uint16 // on error: invalid array length header",
+      "defined_out": [
+        "aggregate%array_length%3#0",
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "tmp%6#0",
+        "aggregate%array_length%3#0"
+      ]
+    },
+    "317": {
+      "op": "intc_1 // 2",
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "tmp%6#0",
+        "aggregate%array_length%3#0",
+        "2"
+      ]
+    },
+    "318": {
+      "op": "+",
+      "defined_out": [
+        "add%3#0",
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "tmp%6#0",
+        "add%3#0"
+      ]
+    },
+    "319": {
+      "op": "dig 1",
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "tmp%6#0",
+        "add%3#0",
+        "tmp%6#0 (copy)"
+      ]
+    },
+    "321": {
+      "op": "len",
+      "defined_out": [
+        "add%3#0",
+        "experiment_id#0",
+        "len%3#0",
+        "results_hash#0",
+        "throughput#0",
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "tmp%6#0",
+        "add%3#0",
+        "len%3#0"
+      ]
+    },
+    "322": {
+      "op": "==",
+      "defined_out": [
+        "eq%3#0",
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "tmp%6#0",
+        "eq%3#0"
+      ]
+    },
+    "323": {
+      "error": "invalid number of bytes for arc4.dynamic_array<arc4.uint8>",
+      "op": "assert // invalid number of bytes for arc4.dynamic_array<arc4.uint8>",
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "tmp%6#0"
+      ]
+    },
+    "324": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "collisions#0",
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0"
+      ],
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "collisions#0"
+      ]
+    },
+    "327": {
+      "op": "txna ApplicationArgs 5",
+      "defined_out": [
+        "collisions#0",
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "collisions#0",
+        "tmp%8#0"
+      ]
+    },
+    "330": {
+      "op": "dup",
+      "defined_out": [
+        "collisions#0",
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "tmp%8#0",
+        "tmp%8#0 (copy)"
+      ],
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "collisions#0",
+        "tmp%8#0",
+        "tmp%8#0 (copy)"
+      ]
+    },
+    "331": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "collisions#0",
+        "tmp%8#0",
+        "tmp%8#0 (copy)",
+        "0"
+      ]
+    },
+    "332": {
+      "error": "invalid array length header",
+      "op": "extract_uint16 // on error: invalid array length header",
+      "defined_out": [
+        "aggregate%array_length%4#0",
+        "collisions#0",
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "collisions#0",
+        "tmp%8#0",
+        "aggregate%array_length%4#0"
+      ]
+    },
+    "333": {
+      "op": "intc_1 // 2",
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "collisions#0",
+        "tmp%8#0",
+        "aggregate%array_length%4#0",
+        "2"
+      ]
+    },
+    "334": {
+      "op": "+",
+      "defined_out": [
+        "add%4#0",
+        "collisions#0",
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "collisions#0",
+        "tmp%8#0",
+        "add%4#0"
+      ]
+    },
+    "335": {
+      "op": "dig 1",
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "collisions#0",
+        "tmp%8#0",
+        "add%4#0",
+        "tmp%8#0 (copy)"
+      ]
+    },
+    "337": {
+      "op": "len",
+      "defined_out": [
+        "add%4#0",
+        "collisions#0",
+        "experiment_id#0",
+        "len%4#0",
+        "results_hash#0",
+        "throughput#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "collisions#0",
+        "tmp%8#0",
+        "add%4#0",
+        "len%4#0"
+      ]
+    },
+    "338": {
+      "op": "==",
+      "defined_out": [
+        "collisions#0",
+        "eq%4#0",
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "collisions#0",
+        "tmp%8#0",
+        "eq%4#0"
+      ]
+    },
+    "339": {
+      "error": "invalid number of bytes for arc4.dynamic_array<arc4.uint8>",
+      "op": "assert // invalid number of bytes for arc4.dynamic_array<arc4.uint8>",
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "collisions#0",
+        "tmp%8#0"
+      ]
+    },
+    "340": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "collisions#0",
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "timestamp#0"
+      ],
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "collisions#0",
+        "timestamp#0"
+      ]
+    },
+    "343": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "collisions#0",
+        "timestamp#0",
+        "0"
+      ]
+    },
+    "344": {
+      "op": "bytec_0 // \"experiment_counter\"",
+      "defined_out": [
+        "\"experiment_counter\"",
+        "0",
+        "collisions#0",
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "timestamp#0"
+      ],
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "collisions#0",
+        "timestamp#0",
+        "0",
+        "\"experiment_counter\""
+      ]
+    },
+    "345": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "collisions#0",
+        "experiment_id#0",
+        "maybe_exists%0#0",
+        "maybe_value%0#0",
+        "results_hash#0",
+        "throughput#0",
+        "timestamp#0"
+      ],
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "collisions#0",
+        "timestamp#0",
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "346": {
+      "error": "check self.experiment_counter exists",
+      "op": "assert // check self.experiment_counter exists",
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "collisions#0",
+        "timestamp#0",
+        "maybe_value%0#0"
+      ]
+    },
+    "347": {
+      "op": "intc_2 // 1",
+      "defined_out": [
+        "1",
+        "collisions#0",
+        "experiment_id#0",
+        "maybe_value%0#0",
+        "results_hash#0",
+        "throughput#0",
+        "timestamp#0"
+      ],
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "collisions#0",
+        "timestamp#0",
+        "maybe_value%0#0",
+        "1"
+      ]
+    },
+    "348": {
+      "op": "+",
+      "defined_out": [
+        "collisions#0",
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "timestamp#0",
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "collisions#0",
+        "timestamp#0",
+        "tmp%0#1"
+      ]
+    },
+    "349": {
+      "op": "bytec_0 // \"experiment_counter\"",
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "collisions#0",
+        "timestamp#0",
+        "tmp%0#1",
+        "\"experiment_counter\""
+      ]
+    },
+    "350": {
+      "op": "swap",
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "collisions#0",
+        "timestamp#0",
+        "\"experiment_counter\"",
+        "tmp%0#1"
+      ]
+    },
+    "351": {
+      "op": "app_global_put",
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "collisions#0",
+        "timestamp#0"
+      ]
+    },
+    "352": {
+      "op": "bytec_1 // \"last_experiment_id\"",
+      "defined_out": [
+        "\"last_experiment_id\"",
+        "collisions#0",
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "timestamp#0"
+      ],
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "collisions#0",
+        "timestamp#0",
+        "\"last_experiment_id\""
+      ]
+    },
+    "353": {
+      "op": "dig 5",
+      "defined_out": [
+        "\"last_experiment_id\"",
+        "collisions#0",
+        "experiment_id#0",
+        "experiment_id#0 (copy)",
+        "results_hash#0",
+        "throughput#0",
+        "timestamp#0"
+      ],
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "collisions#0",
+        "timestamp#0",
+        "\"last_experiment_id\"",
+        "experiment_id#0 (copy)"
+      ]
+    },
+    "355": {
+      "op": "app_global_put",
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "collisions#0",
+        "timestamp#0"
+      ]
+    },
+    "356": {
+      "op": "bytec_2 // \"last_results_hash\"",
+      "defined_out": [
+        "\"last_results_hash\"",
+        "collisions#0",
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "timestamp#0"
+      ],
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "collisions#0",
+        "timestamp#0",
+        "\"last_results_hash\""
+      ]
+    },
+    "357": {
+      "op": "dig 4",
+      "defined_out": [
+        "\"last_results_hash\"",
+        "collisions#0",
+        "experiment_id#0",
+        "results_hash#0",
+        "results_hash#0 (copy)",
+        "throughput#0",
+        "timestamp#0"
+      ],
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "collisions#0",
+        "timestamp#0",
+        "\"last_results_hash\"",
+        "results_hash#0 (copy)"
+      ]
+    },
+    "359": {
+      "op": "app_global_put",
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "collisions#0",
+        "timestamp#0"
+      ]
+    },
+    "360": {
+      "op": "bytec_3 // \"last_throughput\"",
+      "defined_out": [
+        "\"last_throughput\"",
+        "collisions#0",
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "timestamp#0"
+      ],
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "collisions#0",
+        "timestamp#0",
+        "\"last_throughput\""
+      ]
+    },
+    "361": {
+      "op": "dig 3",
+      "defined_out": [
+        "\"last_throughput\"",
+        "collisions#0",
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "throughput#0 (copy)",
+        "timestamp#0"
+      ],
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "collisions#0",
+        "timestamp#0",
+        "\"last_throughput\"",
+        "throughput#0 (copy)"
+      ]
+    },
+    "363": {
+      "op": "app_global_put",
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "collisions#0",
+        "timestamp#0"
+      ]
+    },
+    "364": {
+      "op": "bytec 4 // \"last_collisions\"",
+      "defined_out": [
+        "\"last_collisions\"",
+        "collisions#0",
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "timestamp#0"
+      ],
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "collisions#0",
+        "timestamp#0",
+        "\"last_collisions\""
+      ]
+    },
+    "366": {
+      "op": "dig 2",
+      "defined_out": [
+        "\"last_collisions\"",
+        "collisions#0",
+        "collisions#0 (copy)",
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "timestamp#0"
+      ],
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "collisions#0",
+        "timestamp#0",
+        "\"last_collisions\"",
+        "collisions#0 (copy)"
+      ]
+    },
+    "368": {
+      "op": "app_global_put",
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "collisions#0",
+        "timestamp#0"
+      ]
+    },
+    "369": {
+      "op": "bytec 7 // \"last_author\"",
+      "defined_out": [
+        "\"last_author\"",
+        "collisions#0",
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "timestamp#0"
+      ],
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "collisions#0",
+        "timestamp#0",
+        "\"last_author\""
+      ]
+    },
+    "371": {
+      "op": "txn Sender",
+      "defined_out": [
+        "\"last_author\"",
+        "collisions#0",
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "timestamp#0",
+        "tmp%1#1"
+      ],
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "collisions#0",
+        "timestamp#0",
+        "\"last_author\"",
+        "tmp%1#1"
+      ]
+    },
+    "373": {
+      "op": "app_global_put",
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "collisions#0",
+        "timestamp#0"
+      ]
+    },
+    "374": {
+      "op": "bytec 8 // \"last_round\"",
+      "defined_out": [
+        "\"last_round\"",
+        "collisions#0",
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "timestamp#0"
+      ],
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "collisions#0",
+        "timestamp#0",
+        "\"last_round\""
+      ]
+    },
+    "376": {
+      "op": "global Round",
+      "defined_out": [
+        "\"last_round\"",
+        "collisions#0",
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "timestamp#0",
+        "tmp%2#1"
+      ],
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "collisions#0",
+        "timestamp#0",
+        "\"last_round\"",
+        "tmp%2#1"
+      ]
+    },
+    "378": {
+      "op": "app_global_put",
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "collisions#0",
+        "timestamp#0"
+      ]
+    },
+    "379": {
+      "op": "pushbytes 0x6578706572696d656e745f69643d",
+      "defined_out": [
+        "0x6578706572696d656e745f69643d",
+        "collisions#0",
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "timestamp#0"
+      ],
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "collisions#0",
+        "timestamp#0",
+        "0x6578706572696d656e745f69643d"
+      ]
+    },
+    "395": {
+      "op": "dig 5",
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "collisions#0",
+        "timestamp#0",
+        "0x6578706572696d656e745f69643d",
+        "experiment_id#0 (copy)"
+      ]
+    },
+    "397": {
+      "op": "concat",
+      "defined_out": [
+        "collisions#0",
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "timestamp#0",
+        "tmp%3#1"
+      ],
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "collisions#0",
+        "timestamp#0",
+        "tmp%3#1"
+      ]
+    },
+    "398": {
+      "op": "pushbytes 0x3b686173683d",
+      "defined_out": [
+        "0x3b686173683d",
+        "collisions#0",
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "timestamp#0",
+        "tmp%3#1"
+      ],
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "collisions#0",
+        "timestamp#0",
+        "tmp%3#1",
+        "0x3b686173683d"
+      ]
+    },
+    "406": {
+      "op": "concat",
+      "stack_out": [
+        "experiment_id#0",
+        "results_hash#0",
+        "throughput#0",
+        "collisions#0",
+        "timestamp#0",
+        "tmp%4#0"
+      ]
+    },
+    "407": {
+      "op": "uncover 4",
+      "stack_out": [
+        "experiment_id#0",
+        "throughput#0",
+        "collisions#0",
+        "timestamp#0",
+        "tmp%4#0",
+        "results_hash#0"
+      ]
+    },
+    "409": {
+      "op": "concat",
+      "defined_out": [
+        "collisions#0",
+        "experiment_id#0",
+        "throughput#0",
+        "timestamp#0",
+        "tmp%5#1"
+      ],
+      "stack_out": [
+        "experiment_id#0",
+        "throughput#0",
+        "collisions#0",
+        "timestamp#0",
+        "tmp%5#1"
+      ]
+    },
+    "410": {
+      "op": "pushbytes 0x3b7468726f7567687075743d",
+      "defined_out": [
+        "0x3b7468726f7567687075743d",
+        "collisions#0",
+        "experiment_id#0",
+        "throughput#0",
+        "timestamp#0",
+        "tmp%5#1"
+      ],
+      "stack_out": [
+        "experiment_id#0",
+        "throughput#0",
+        "collisions#0",
+        "timestamp#0",
+        "tmp%5#1",
+        "0x3b7468726f7567687075743d"
+      ]
+    },
+    "424": {
+      "op": "concat",
+      "stack_out": [
+        "experiment_id#0",
+        "throughput#0",
+        "collisions#0",
+        "timestamp#0",
+        "tmp%6#0"
+      ]
+    },
+    "425": {
+      "op": "uncover 3",
+      "stack_out": [
+        "experiment_id#0",
+        "collisions#0",
+        "timestamp#0",
+        "tmp%6#0",
+        "throughput#0"
+      ]
+    },
+    "427": {
+      "op": "concat",
+      "defined_out": [
+        "collisions#0",
+        "experiment_id#0",
+        "timestamp#0",
+        "tmp%7#1"
+      ],
+      "stack_out": [
+        "experiment_id#0",
+        "collisions#0",
+        "timestamp#0",
+        "tmp%7#1"
+      ]
+    },
+    "428": {
+      "op": "pushbytes 0x3b636f6c6c6973696f6e733d",
+      "defined_out": [
+        "0x3b636f6c6c6973696f6e733d",
+        "collisions#0",
+        "experiment_id#0",
+        "timestamp#0",
+        "tmp%7#1"
+      ],
+      "stack_out": [
+        "experiment_id#0",
+        "collisions#0",
+        "timestamp#0",
+        "tmp%7#1",
+        "0x3b636f6c6c6973696f6e733d"
+      ]
+    },
+    "442": {
+      "op": "concat",
+      "stack_out": [
+        "experiment_id#0",
+        "collisions#0",
+        "timestamp#0",
+        "tmp%8#0"
+      ]
+    },
+    "443": {
+      "op": "uncover 2",
+      "stack_out": [
+        "experiment_id#0",
+        "timestamp#0",
+        "tmp%8#0",
+        "collisions#0"
+      ]
+    },
+    "445": {
+      "op": "concat",
+      "defined_out": [
+        "experiment_id#0",
+        "timestamp#0",
+        "tmp%9#1"
+      ],
+      "stack_out": [
+        "experiment_id#0",
+        "timestamp#0",
+        "tmp%9#1"
+      ]
+    },
+    "446": {
+      "op": "pushbytes 0x3b74696d657374616d703d",
+      "defined_out": [
+        "0x3b74696d657374616d703d",
+        "experiment_id#0",
+        "timestamp#0",
+        "tmp%9#1"
+      ],
+      "stack_out": [
+        "experiment_id#0",
+        "timestamp#0",
+        "tmp%9#1",
+        "0x3b74696d657374616d703d"
+      ]
+    },
+    "459": {
+      "op": "concat",
+      "defined_out": [
+        "experiment_id#0",
+        "timestamp#0",
+        "tmp%10#1"
+      ],
+      "stack_out": [
+        "experiment_id#0",
+        "timestamp#0",
+        "tmp%10#1"
+      ]
+    },
+    "460": {
+      "op": "swap",
+      "stack_out": [
+        "experiment_id#0",
+        "tmp%10#1",
+        "timestamp#0"
+      ]
+    },
+    "461": {
+      "op": "concat",
+      "defined_out": [
+        "experiment_data#0",
+        "experiment_id#0"
+      ],
+      "stack_out": [
+        "experiment_id#0",
+        "experiment_data#0"
+      ]
+    },
+    "462": {
+      "op": "dig 1",
+      "stack_out": [
+        "experiment_id#0",
+        "experiment_data#0",
+        "experiment_id#0 (copy)"
+      ]
+    },
+    "464": {
+      "op": "box_del",
+      "defined_out": [
+        "experiment_data#0",
+        "experiment_id#0",
+        "{box_del}"
+      ],
+      "stack_out": [
+        "experiment_id#0",
+        "experiment_data#0",
+        "{box_del}"
+      ]
+    },
+    "465": {
+      "op": "pop",
+      "stack_out": [
+        "experiment_id#0",
+        "experiment_data#0"
+      ]
+    },
+    "466": {
+      "op": "box_put",
+      "stack_out": []
+    },
+    "467": {
+      "op": "pushbytes 0x151f7c7500154578706572696d656e742072656769737465726564",
+      "defined_out": [
+        "0x151f7c7500154578706572696d656e742072656769737465726564"
+      ],
+      "stack_out": [
+        "0x151f7c7500154578706572696d656e742072656769737465726564"
+      ]
+    },
+    "496": {
+      "op": "log",
+      "stack_out": []
+    },
+    "497": {
+      "op": "intc_2 // 1",
+      "stack_out": [
+        "1"
+      ]
+    },
+    "498": {
+      "op": "return",
+      "stack_out": []
+    },
+    "499": {
+      "subroutine": "smart_contracts.hello_world.contract.HelloWorld.get_experiment_summary[routing]",
+      "params": {},
+      "block": "get_experiment_summary",
+      "stack_in": [],
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "0"
+      ]
+    },
+    "500": {
+      "op": "bytec_1 // \"last_experiment_id\"",
+      "defined_out": [
+        "\"last_experiment_id\"",
+        "0"
+      ],
+      "stack_out": [
+        "0",
+        "\"last_experiment_id\""
+      ]
+    },
+    "501": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%0#0",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "502": {
+      "error": "check self.last_experiment_id exists",
+      "op": "assert // check self.last_experiment_id exists",
+      "stack_out": [
+        "maybe_value%0#0"
+      ]
+    },
+    "503": {
+      "op": "pushbytes \"Experiment ID: \"",
+      "defined_out": [
+        "\"Experiment ID: \"",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "maybe_value%0#0",
+        "\"Experiment ID: \""
+      ]
+    },
+    "520": {
+      "op": "swap",
+      "stack_out": [
+        "\"Experiment ID: \"",
+        "maybe_value%0#0"
+      ]
+    },
+    "521": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "tmp%0#1"
+      ]
+    },
+    "522": {
+      "op": "pushbytes \" | Hash: \"",
+      "defined_out": [
+        "\" | Hash: \"",
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "tmp%0#1",
+        "\" | Hash: \""
+      ]
+    },
+    "533": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%1#1"
+      ],
+      "stack_out": [
+        "tmp%1#1"
+      ]
+    },
+    "534": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "tmp%1#1",
+        "0"
+      ]
+    },
+    "535": {
+      "op": "bytec_2 // \"last_results_hash\"",
+      "defined_out": [
+        "\"last_results_hash\"",
+        "0",
+        "tmp%1#1"
+      ],
+      "stack_out": [
+        "tmp%1#1",
+        "0",
+        "\"last_results_hash\""
+      ]
+    },
+    "536": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%1#0",
+        "maybe_value%1#0",
+        "tmp%1#1"
+      ],
+      "stack_out": [
+        "tmp%1#1",
+        "maybe_value%1#0",
+        "maybe_exists%1#0"
+      ]
+    },
+    "537": {
+      "error": "check self.last_results_hash exists",
+      "op": "assert // check self.last_results_hash exists",
+      "stack_out": [
+        "tmp%1#1",
+        "maybe_value%1#0"
+      ]
+    },
+    "538": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0"
+      ]
+    },
+    "539": {
+      "op": "pushbytes \" | Throughput: \"",
+      "defined_out": [
+        "\" | Throughput: \"",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0",
+        "\" | Throughput: \""
+      ]
+    },
+    "556": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "557": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "tmp%3#0",
+        "0"
+      ]
+    },
+    "558": {
+      "op": "bytec_3 // \"last_throughput\"",
+      "defined_out": [
+        "\"last_throughput\"",
+        "0",
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "0",
+        "\"last_throughput\""
+      ]
+    },
+    "559": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%2#0",
+        "maybe_value%2#0",
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "maybe_value%2#0",
+        "maybe_exists%2#0"
+      ]
+    },
+    "560": {
+      "error": "check self.last_throughput exists",
+      "op": "assert // check self.last_throughput exists",
+      "stack_out": [
+        "tmp%3#0",
+        "maybe_value%2#0"
+      ]
+    },
+    "561": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%4#0"
+      ]
+    },
+    "562": {
+      "op": "pushbytes \" | Collisions: \"",
+      "defined_out": [
+        "\" | Collisions: \"",
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%4#0",
+        "\" | Collisions: \""
+      ]
+    },
+    "579": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "tmp%5#0"
+      ]
+    },
+    "580": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "tmp%5#0",
+        "0"
+      ]
+    },
+    "581": {
+      "op": "bytec 4 // \"last_collisions\"",
+      "defined_out": [
+        "\"last_collisions\"",
+        "0",
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "tmp%5#0",
+        "0",
+        "\"last_collisions\""
+      ]
+    },
+    "583": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%3#0",
+        "maybe_value%3#0",
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "tmp%5#0",
+        "maybe_value%3#0",
+        "maybe_exists%3#0"
+      ]
+    },
+    "584": {
+      "error": "check self.last_collisions exists",
+      "op": "assert // check self.last_collisions exists",
+      "stack_out": [
+        "tmp%5#0",
+        "maybe_value%3#0"
+      ]
+    },
+    "585": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "tmp%6#0"
+      ]
+    },
+    "586": {
+      "op": "dup",
+      "defined_out": [
+        "tmp%6#0",
+        "tmp%6#0 (copy)"
+      ],
+      "stack_out": [
+        "tmp%6#0",
+        "tmp%6#0 (copy)"
+      ]
+    },
+    "587": {
+      "op": "len",
+      "defined_out": [
+        "aggregate%length%0#0",
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "tmp%6#0",
+        "aggregate%length%0#0"
+      ]
+    },
+    "588": {
+      "op": "itob",
+      "defined_out": [
+        "aggregate%as_bytes%0#0",
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "tmp%6#0",
+        "aggregate%as_bytes%0#0"
+      ]
+    },
+    "589": {
+      "op": "extract 6 2",
+      "defined_out": [
+        "aggregate%length_uint16%0#0",
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "tmp%6#0",
+        "aggregate%length_uint16%0#0"
+      ]
+    },
+    "592": {
+      "op": "swap",
+      "stack_out": [
+        "aggregate%length_uint16%0#0",
+        "tmp%6#0"
+      ]
+    },
+    "593": {
+      "op": "concat",
+      "defined_out": [
+        "aggregate%encoded_value%0#0"
+      ],
+      "stack_out": [
+        "aggregate%encoded_value%0#0"
+      ]
+    },
+    "594": {
+      "op": "bytec 5 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "aggregate%encoded_value%0#0"
+      ],
+      "stack_out": [
+        "aggregate%encoded_value%0#0",
+        "0x151f7c75"
+      ]
+    },
+    "596": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "aggregate%encoded_value%0#0"
+      ]
+    },
+    "597": {
+      "op": "concat",
+      "stack_out": [
+        "tmp%2#0"
+      ]
+    },
+    "598": {
+      "op": "log",
+      "stack_out": []
+    },
+    "599": {
+      "op": "intc_2 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "1"
+      ]
+    },
+    "600": {
+      "op": "return",
+      "stack_out": []
+    },
+    "601": {
+      "subroutine": "smart_contracts.hello_world.contract.HelloWorld.get_experiment_box[routing]",
+      "params": {},
+      "block": "get_experiment_box",
+      "stack_in": [],
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "604": {
+      "op": "dup",
+      "defined_out": [
+        "tmp%0#0",
+        "tmp%0#0 (copy)"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "tmp%0#0 (copy)"
+      ]
+    },
+    "605": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0",
+        "tmp%0#0",
+        "tmp%0#0 (copy)"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "tmp%0#0 (copy)",
+        "0"
+      ]
+    },
+    "606": {
+      "error": "invalid array length header",
+      "op": "extract_uint16 // on error: invalid array length header",
+      "defined_out": [
+        "aggregate%array_length%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "aggregate%array_length%0#0"
+      ]
+    },
+    "607": {
+      "op": "intc_1 // 2",
+      "defined_out": [
+        "2",
+        "aggregate%array_length%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "aggregate%array_length%0#0",
+        "2"
+      ]
+    },
+    "608": {
+      "op": "+",
+      "defined_out": [
+        "add%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "add%0#0"
+      ]
+    },
+    "609": {
+      "op": "dig 1",
+      "stack_out": [
+        "tmp%0#0",
+        "add%0#0",
+        "tmp%0#0 (copy)"
+      ]
+    },
+    "611": {
+      "op": "len",
+      "defined_out": [
+        "add%0#0",
+        "len%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "add%0#0",
+        "len%0#0"
+      ]
+    },
+    "612": {
+      "op": "==",
+      "defined_out": [
+        "eq%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "eq%0#0"
+      ]
+    },
+    "613": {
+      "error": "invalid number of bytes for arc4.dynamic_array<arc4.uint8>",
+      "op": "assert // invalid number of bytes for arc4.dynamic_array<arc4.uint8>",
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "614": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "experiment_id#0"
+      ],
+      "stack_out": [
+        "experiment_id#0"
+      ]
+    },
+    "617": {
+      "op": "box_get",
+      "defined_out": [
+        "aggregate%box_get%0#0",
+        "aggregate%box_get%1#0"
+      ],
+      "stack_out": [
+        "aggregate%box_get%0#0",
+        "aggregate%box_get%1#0"
+      ]
+    },
+    "618": {
+      "error": "check Box exists",
+      "op": "assert // check Box exists",
+      "stack_out": [
+        "aggregate%box_get%0#0"
+      ]
+    },
+    "619": {
+      "op": "dup",
+      "defined_out": [
+        "aggregate%box_get%0#0",
+        "aggregate%box_get%0#0 (copy)"
+      ],
+      "stack_out": [
+        "aggregate%box_get%0#0",
+        "aggregate%box_get%0#0 (copy)"
+      ]
+    },
+    "620": {
+      "op": "len",
+      "defined_out": [
+        "aggregate%box_get%0#0",
+        "aggregate%length%0#0"
+      ],
+      "stack_out": [
+        "aggregate%box_get%0#0",
+        "aggregate%length%0#0"
+      ]
+    },
+    "621": {
+      "op": "itob",
+      "defined_out": [
+        "aggregate%as_bytes%0#0",
+        "aggregate%box_get%0#0"
+      ],
+      "stack_out": [
+        "aggregate%box_get%0#0",
+        "aggregate%as_bytes%0#0"
+      ]
+    },
+    "622": {
+      "op": "extract 6 2",
+      "defined_out": [
+        "aggregate%box_get%0#0",
+        "aggregate%length_uint16%0#0"
+      ],
+      "stack_out": [
+        "aggregate%box_get%0#0",
+        "aggregate%length_uint16%0#0"
+      ]
+    },
+    "625": {
+      "op": "swap",
+      "stack_out": [
+        "aggregate%length_uint16%0#0",
+        "aggregate%box_get%0#0"
+      ]
+    },
+    "626": {
+      "op": "concat",
+      "defined_out": [
+        "aggregate%encoded_value%0#0"
+      ],
+      "stack_out": [
+        "aggregate%encoded_value%0#0"
+      ]
+    },
+    "627": {
+      "op": "bytec 5 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "aggregate%encoded_value%0#0"
+      ],
+      "stack_out": [
+        "aggregate%encoded_value%0#0",
+        "0x151f7c75"
+      ]
+    },
+    "629": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "aggregate%encoded_value%0#0"
+      ]
+    },
+    "630": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%4#0"
+      ]
+    },
+    "631": {
+      "op": "log",
+      "stack_out": []
+    },
+    "632": {
+      "op": "intc_2 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "1"
+      ]
+    },
+    "633": {
+      "op": "return",
+      "stack_out": []
+    }
+  }
+}

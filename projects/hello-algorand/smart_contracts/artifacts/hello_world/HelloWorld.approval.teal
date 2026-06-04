@@ -1,0 +1,449 @@
+#pragma version 11
+#pragma typetrack false
+
+// algopy.arc4.ARC4Contract.approval_program() -> uint64:
+main:
+    intcblock 0 2 1
+    bytecblock "experiment_counter" "last_experiment_id" "last_results_hash" "last_throughput" "last_collisions" 0x151f7c75 "NONE" "last_author" "last_round"
+    txn ApplicationID
+    bnz main_after_if_else@2
+    // smart_contracts/hello_world/contract.py:14
+    // self.experiment_counter = UInt64(0)
+    bytec_0 // "experiment_counter"
+    intc_0 // 0
+    app_global_put
+    // smart_contracts/hello_world/contract.py:16
+    // self.last_experiment_id = String("NONE")
+    bytec_1 // "last_experiment_id"
+    bytec 6 // "NONE"
+    app_global_put
+    // smart_contracts/hello_world/contract.py:17
+    // self.last_results_hash = String("NONE")
+    bytec_2 // "last_results_hash"
+    bytec 6 // "NONE"
+    app_global_put
+    // smart_contracts/hello_world/contract.py:18
+    // self.last_throughput = String("0")
+    bytec_3 // "last_throughput"
+    pushbytes "0"
+    app_global_put
+    // smart_contracts/hello_world/contract.py:19
+    // self.last_collisions = String("0")
+    bytec 4 // "last_collisions"
+    pushbytes "0"
+    app_global_put
+    // smart_contracts/hello_world/contract.py:21
+    // self.last_author = Bytes(b"")
+    bytec 7 // "last_author"
+    pushbytes 0x
+    app_global_put
+    // smart_contracts/hello_world/contract.py:22
+    // self.last_round = UInt64(0)
+    bytec 8 // "last_round"
+    intc_0 // 0
+    app_global_put
+
+main_after_if_else@2:
+    // smart_contracts/hello_world/contract.py:5
+    // class HelloWorld(ARC4Contract):
+    txn NumAppArgs
+    bz main___algopy_default_create@13
+    txn OnCompletion
+    !
+    assert
+    txn ApplicationID
+    assert
+    pushbytess 0x02bece11 0x7e631a5c 0x229a4513 0xec7620e0 // method "hello(string)string", method "register_experiment(string,string,string,string,string)string", method "get_experiment_summary()string", method "get_experiment_box(string)string"
+    txna ApplicationArgs 0
+    match hello register_experiment get_experiment_summary get_experiment_box
+    err
+
+main___algopy_default_create@13:
+    txn OnCompletion
+    !
+    txn ApplicationID
+    !
+    &&
+    return
+
+
+// smart_contracts.hello_world.contract.HelloWorld.hello[routing]() -> void:
+hello:
+    // smart_contracts/hello_world/contract.py:24
+    // @abimethod()
+    txna ApplicationArgs 1
+    dup
+    intc_0 // 0
+    extract_uint16 // on error: invalid array length header
+    intc_1 // 2
+    +
+    dig 1
+    len
+    ==
+    assert // invalid number of bytes for arc4.dynamic_array<arc4.uint8>
+    extract 2 0
+    // smart_contracts/hello_world/contract.py:26
+    // return String("Hello, ") + name
+    pushbytes "Hello, "
+    swap
+    concat
+    // smart_contracts/hello_world/contract.py:24
+    // @abimethod()
+    dup
+    len
+    itob
+    extract 6 2
+    swap
+    concat
+    bytec 5 // 0x151f7c75
+    swap
+    concat
+    log
+    intc_2 // 1
+    return
+
+
+// smart_contracts.hello_world.contract.HelloWorld.register_experiment[routing]() -> void:
+register_experiment:
+    // smart_contracts/hello_world/contract.py:28
+    // @abimethod()
+    txna ApplicationArgs 1
+    dup
+    intc_0 // 0
+    extract_uint16 // on error: invalid array length header
+    intc_1 // 2
+    +
+    dig 1
+    len
+    ==
+    assert // invalid number of bytes for arc4.dynamic_array<arc4.uint8>
+    extract 2 0
+    txna ApplicationArgs 2
+    dup
+    intc_0 // 0
+    extract_uint16 // on error: invalid array length header
+    intc_1 // 2
+    +
+    dig 1
+    len
+    ==
+    assert // invalid number of bytes for arc4.dynamic_array<arc4.uint8>
+    extract 2 0
+    txna ApplicationArgs 3
+    dup
+    intc_0 // 0
+    extract_uint16 // on error: invalid array length header
+    intc_1 // 2
+    +
+    dig 1
+    len
+    ==
+    assert // invalid number of bytes for arc4.dynamic_array<arc4.uint8>
+    extract 2 0
+    txna ApplicationArgs 4
+    dup
+    intc_0 // 0
+    extract_uint16 // on error: invalid array length header
+    intc_1 // 2
+    +
+    dig 1
+    len
+    ==
+    assert // invalid number of bytes for arc4.dynamic_array<arc4.uint8>
+    extract 2 0
+    txna ApplicationArgs 5
+    dup
+    intc_0 // 0
+    extract_uint16 // on error: invalid array length header
+    intc_1 // 2
+    +
+    dig 1
+    len
+    ==
+    assert // invalid number of bytes for arc4.dynamic_array<arc4.uint8>
+    extract 2 0
+    // smart_contracts/hello_world/contract.py:44-45
+    // # Actualizar resumen global
+    // self.experiment_counter += 1
+    intc_0 // 0
+    bytec_0 // "experiment_counter"
+    app_global_get_ex
+    assert // check self.experiment_counter exists
+    intc_2 // 1
+    +
+    bytec_0 // "experiment_counter"
+    swap
+    app_global_put
+    // smart_contracts/hello_world/contract.py:46
+    // self.last_experiment_id = experiment_id
+    bytec_1 // "last_experiment_id"
+    dig 5
+    app_global_put
+    // smart_contracts/hello_world/contract.py:47
+    // self.last_results_hash = results_hash
+    bytec_2 // "last_results_hash"
+    dig 4
+    app_global_put
+    // smart_contracts/hello_world/contract.py:48
+    // self.last_throughput = throughput
+    bytec_3 // "last_throughput"
+    dig 3
+    app_global_put
+    // smart_contracts/hello_world/contract.py:49
+    // self.last_collisions = collisions
+    bytec 4 // "last_collisions"
+    dig 2
+    app_global_put
+    // smart_contracts/hello_world/contract.py:50
+    // self.last_author = Txn.sender.bytes
+    bytec 7 // "last_author"
+    txn Sender
+    app_global_put
+    // smart_contracts/hello_world/contract.py:51
+    // self.last_round = Global.round
+    bytec 8 // "last_round"
+    global Round
+    app_global_put
+    // smart_contracts/hello_world/contract.py:59
+    // b"experiment_id="
+    pushbytes 0x6578706572696d656e745f69643d
+    // smart_contracts/hello_world/contract.py:59-60
+    // b"experiment_id="
+    // + experiment_id.bytes
+    dig 5
+    concat
+    // smart_contracts/hello_world/contract.py:61
+    // + b";hash="
+    pushbytes 0x3b686173683d
+    // smart_contracts/hello_world/contract.py:59-61
+    // b"experiment_id="
+    // + experiment_id.bytes
+    // + b";hash="
+    concat
+    // smart_contracts/hello_world/contract.py:59-62
+    // b"experiment_id="
+    // + experiment_id.bytes
+    // + b";hash="
+    // + results_hash.bytes
+    uncover 4
+    concat
+    // smart_contracts/hello_world/contract.py:63
+    // + b";throughput="
+    pushbytes 0x3b7468726f7567687075743d
+    // smart_contracts/hello_world/contract.py:59-63
+    // b"experiment_id="
+    // + experiment_id.bytes
+    // + b";hash="
+    // + results_hash.bytes
+    // + b";throughput="
+    concat
+    // smart_contracts/hello_world/contract.py:59-64
+    // b"experiment_id="
+    // + experiment_id.bytes
+    // + b";hash="
+    // + results_hash.bytes
+    // + b";throughput="
+    // + throughput.bytes
+    uncover 3
+    concat
+    // smart_contracts/hello_world/contract.py:65
+    // + b";collisions="
+    pushbytes 0x3b636f6c6c6973696f6e733d
+    // smart_contracts/hello_world/contract.py:59-65
+    // b"experiment_id="
+    // + experiment_id.bytes
+    // + b";hash="
+    // + results_hash.bytes
+    // + b";throughput="
+    // + throughput.bytes
+    // + b";collisions="
+    concat
+    // smart_contracts/hello_world/contract.py:59-66
+    // b"experiment_id="
+    // + experiment_id.bytes
+    // + b";hash="
+    // + results_hash.bytes
+    // + b";throughput="
+    // + throughput.bytes
+    // + b";collisions="
+    // + collisions.bytes
+    uncover 2
+    concat
+    // smart_contracts/hello_world/contract.py:67
+    // + b";timestamp="
+    pushbytes 0x3b74696d657374616d703d
+    // smart_contracts/hello_world/contract.py:59-67
+    // b"experiment_id="
+    // + experiment_id.bytes
+    // + b";hash="
+    // + results_hash.bytes
+    // + b";throughput="
+    // + throughput.bytes
+    // + b";collisions="
+    // + collisions.bytes
+    // + b";timestamp="
+    concat
+    // smart_contracts/hello_world/contract.py:59-68
+    // b"experiment_id="
+    // + experiment_id.bytes
+    // + b";hash="
+    // + results_hash.bytes
+    // + b";throughput="
+    // + throughput.bytes
+    // + b";collisions="
+    // + collisions.bytes
+    // + b";timestamp="
+    // + timestamp.bytes
+    swap
+    concat
+    // smart_contracts/hello_world/contract.py:71
+    // experiment_box.value = experiment_data
+    dig 1
+    box_del
+    pop
+    box_put
+    // smart_contracts/hello_world/contract.py:28
+    // @abimethod()
+    pushbytes 0x151f7c7500154578706572696d656e742072656769737465726564
+    log
+    intc_2 // 1
+    return
+
+
+// smart_contracts.hello_world.contract.HelloWorld.get_experiment_summary[routing]() -> void:
+get_experiment_summary:
+    // smart_contracts/hello_world/contract.py:83
+    // + self.last_experiment_id
+    intc_0 // 0
+    bytec_1 // "last_experiment_id"
+    app_global_get_ex
+    assert // check self.last_experiment_id exists
+    // smart_contracts/hello_world/contract.py:82
+    // String("Experiment ID: ")
+    pushbytes "Experiment ID: "
+    // smart_contracts/hello_world/contract.py:82-83
+    // String("Experiment ID: ")
+    // + self.last_experiment_id
+    swap
+    concat
+    // smart_contracts/hello_world/contract.py:84
+    // + String(" | Hash: ")
+    pushbytes " | Hash: "
+    // smart_contracts/hello_world/contract.py:82-84
+    // String("Experiment ID: ")
+    // + self.last_experiment_id
+    // + String(" | Hash: ")
+    concat
+    // smart_contracts/hello_world/contract.py:85
+    // + self.last_results_hash
+    intc_0 // 0
+    bytec_2 // "last_results_hash"
+    app_global_get_ex
+    assert // check self.last_results_hash exists
+    // smart_contracts/hello_world/contract.py:82-85
+    // String("Experiment ID: ")
+    // + self.last_experiment_id
+    // + String(" | Hash: ")
+    // + self.last_results_hash
+    concat
+    // smart_contracts/hello_world/contract.py:86
+    // + String(" | Throughput: ")
+    pushbytes " | Throughput: "
+    // smart_contracts/hello_world/contract.py:82-86
+    // String("Experiment ID: ")
+    // + self.last_experiment_id
+    // + String(" | Hash: ")
+    // + self.last_results_hash
+    // + String(" | Throughput: ")
+    concat
+    // smart_contracts/hello_world/contract.py:87
+    // + self.last_throughput
+    intc_0 // 0
+    bytec_3 // "last_throughput"
+    app_global_get_ex
+    assert // check self.last_throughput exists
+    // smart_contracts/hello_world/contract.py:82-87
+    // String("Experiment ID: ")
+    // + self.last_experiment_id
+    // + String(" | Hash: ")
+    // + self.last_results_hash
+    // + String(" | Throughput: ")
+    // + self.last_throughput
+    concat
+    // smart_contracts/hello_world/contract.py:88
+    // + String(" | Collisions: ")
+    pushbytes " | Collisions: "
+    // smart_contracts/hello_world/contract.py:82-88
+    // String("Experiment ID: ")
+    // + self.last_experiment_id
+    // + String(" | Hash: ")
+    // + self.last_results_hash
+    // + String(" | Throughput: ")
+    // + self.last_throughput
+    // + String(" | Collisions: ")
+    concat
+    // smart_contracts/hello_world/contract.py:89
+    // + self.last_collisions
+    intc_0 // 0
+    bytec 4 // "last_collisions"
+    app_global_get_ex
+    assert // check self.last_collisions exists
+    // smart_contracts/hello_world/contract.py:82-89
+    // String("Experiment ID: ")
+    // + self.last_experiment_id
+    // + String(" | Hash: ")
+    // + self.last_results_hash
+    // + String(" | Throughput: ")
+    // + self.last_throughput
+    // + String(" | Collisions: ")
+    // + self.last_collisions
+    concat
+    // smart_contracts/hello_world/contract.py:75
+    // @abimethod()
+    dup
+    len
+    itob
+    extract 6 2
+    swap
+    concat
+    bytec 5 // 0x151f7c75
+    swap
+    concat
+    log
+    intc_2 // 1
+    return
+
+
+// smart_contracts.hello_world.contract.HelloWorld.get_experiment_box[routing]() -> void:
+get_experiment_box:
+    // smart_contracts/hello_world/contract.py:92
+    // @abimethod()
+    txna ApplicationArgs 1
+    dup
+    intc_0 // 0
+    extract_uint16 // on error: invalid array length header
+    intc_1 // 2
+    +
+    dig 1
+    len
+    ==
+    assert // invalid number of bytes for arc4.dynamic_array<arc4.uint8>
+    extract 2 0
+    // smart_contracts/hello_world/contract.py:104
+    // return String.from_bytes(experiment_box.value)
+    box_get
+    assert // check Box exists
+    // smart_contracts/hello_world/contract.py:92
+    // @abimethod()
+    dup
+    len
+    itob
+    extract 6 2
+    swap
+    concat
+    bytec 5 // 0x151f7c75
+    swap
+    concat
+    log
+    intc_2 // 1
+    return
